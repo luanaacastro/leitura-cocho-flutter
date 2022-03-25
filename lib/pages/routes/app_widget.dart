@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:leitura_cocho/pages/pdf_page.dart';
+import 'package:leitura_cocho/pages/pdf.dart';
 import 'package:leitura_cocho/pages/search.dart';
 import 'package:leitura_cocho/pages/settings.dart';
 import 'package:leitura_cocho/pages/calculate.dart';
-import 'package:leitura_cocho/pages/graph-page.dart';
-import 'package:leitura_cocho/pages/history_page.dart';
-import 'package:leitura_cocho/pages/home_page.dart';
+import 'package:leitura_cocho/pages/graph.dart';
+import 'package:leitura_cocho/pages/history.dart';
+import 'package:leitura_cocho/pages/home.dart';
 
 
-import '../fazenda_page.dart';
+import '../farm.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
