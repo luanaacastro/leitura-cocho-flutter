@@ -8,7 +8,7 @@ import 'package:leitura_cocho/pages/history_page.dart';
 import 'package:leitura_cocho/pages/home_page.dart';
 
 
-import 'fazenda_page.dart';
+import '../fazenda_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);

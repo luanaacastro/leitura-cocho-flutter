@@ -4,7 +4,7 @@ import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
 
-import 'package:leitura_cocho/pages/list_tile_custom.dart';
+import 'package:leitura_cocho/pages/components/list_tile_custom.dart';
 
 class PdfPage extends StatefulWidget {
   const PdfPage({Key? key}) : super(key: key);

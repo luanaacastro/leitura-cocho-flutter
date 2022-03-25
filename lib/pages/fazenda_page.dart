@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:leitura_cocho/pages/list_tile_custom.dart';
+import 'package:leitura_cocho/pages/components/list_tile_custom.dart';
 
 class FazendaPage extends StatefulWidget {
   const FazendaPage({Key? key}) : super(key: key);
@@ -12,7 +12,10 @@ class FazendaPage extends StatefulWidget {
 
 class FazendaPageState extends State<FazendaPage> {
   late String fazenda;
+  late String codigo;
   final fieldFazenda = TextEditingController();
+  final fieldCodigo = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,6 +25,27 @@ class FazendaPageState extends State<FazendaPage> {
             padding: const EdgeInsets.all(8.0),
             child: Column(
               children: [
+                TextField(
+                  onChanged: (codigoText) {
+                    codigo = codigoText;
+                  },
+                  keyboardType: TextInputType.text,
+                  decoration: InputDecoration(
+                      labelText: 'Código da fazenda',
+                      enabledBorder: OutlineInputBorder(
+                          borderSide:
+                              const BorderSide(width: 3, color: Colors.blue),
+                          borderRadius: BorderRadius.circular(15)),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide:
+                            const BorderSide(width: 3, color: Colors.red),
+                        borderRadius: BorderRadius.circular(15),
+                      )),
+                  controller: fieldCodigo,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(top: 10),
+                ),
                 TextField(
                   onChanged: (fazendaText) {
                     fazenda = fazendaText;

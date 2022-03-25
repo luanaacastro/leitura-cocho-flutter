@@ -19,6 +19,7 @@ class HomePageState extends State<HomePage> {
         body: Column(children: [
           Center(
             child: Container(
+              margin: const EdgeInsets.all(50),
               color: const Color.fromARGB(255, 2, 87, 2),
               child: Image.asset('assets/images/logo.png'),
             ),
