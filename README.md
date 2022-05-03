@@ -1,16 +1,43 @@
-# leitura_cocho
+# Leitura de Cocho
 
-A new Flutter project.
 
-## Getting Started
+Leitura de Cocho é um aplicativo Flutter desenvolvido para realizar as tarefas do manejo de cocho bovino, visando uma praticidade e facilidade nessa tarefa.
 
-This project is a starting point for a Flutter application.
+O aplicativo foi desenvolvido para uso dos acadêmicos do Instituto Federal de Ciência e Tecnologia do Norte de Minas Gerais - Campus Salinas que realizam todo o processo do manejo de forma manual.
 
-A few resources to get you started if this is your first Flutter project:
+O aplicativo contém as seguintes funcionalidades:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Cadastro de usuários
+- Cálculo do abastecimento de nutrientes
+- Histórico de abastecimentos
+- Consulta de abastecimentos  tanto po trtador como por identicador do gado
+- Visualização de consumo e sobras em formato de gráfico de linhas
+- Compartilhamento de registros entre usuarios da mesma fazenda
+- Funcionalidade online e offline
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Além dessas funcionalidades o aplicativo armazena os dados localmente e em servidorvia API.
+
+## Instalação
+
+Para instalação primeiramente clone o repositório local, em seguida abra o diretório salvo e instale as dependências
+
+```sh
+git clone https://github.com/luanaacastro/leitura-cocho-flutter
+cd leitura-cocho-flutter
+flutter pub get
+```
+
+## Uso
+
+Para utilizar o aplicativo é necessário adicionar um arquivo assinado key.properties na pasta android.
+
+Após assinado caso desaja salvar os dados em um servidor é necessário adicionar os acesso as API nos arquivos helpers, se encontrando na pasta lib/helpers/ 
+
+Os modelos da API podem ser encontrados no link https://github.com/RToramaru/api-app
+
+
+## Desenvolvedores
+Luana Ataide Castro https://github.com/luanaacastro
+
+Rafael Almeida Soares https://github.com/RToramaru
+
